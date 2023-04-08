@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="actionNovo"/>
+    <addaction name="actionAbrir"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalvar"/>
+    <addaction name="actionSalvar_como"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="title">
+     <string>Editar</string>
+    </property>
+    <addaction name="actionCopiar"/>
+    <addaction name="actionCortar"/>
+    <addaction name="separator"/>
+    <addaction name="actionColar"/>
+    <addaction name="actionDesfazer"/>
+    <addaction name="actionRefazer"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEditar"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNovo"/>
+   <addaction name="actionAbrir"/>
+   <addaction name="actionSalvar"/>
+   <addaction name="actionSalvar_como"/>
+   <addaction name="actionCopiar"/>
+   <addaction name="actionCortar"/>
+   <addaction name="actionColar"/>
+   <addaction name="separator"/>
+   <addaction name="actionDesfazer"/>
+   <addaction name="actionRefazer"/>
+  </widget>
+  <action name="actionNovo">
+   <property name="icon">
+    <iconset resource="notepadRecursos.qrc">
+     <normaloff>:/imagens/imagens/novo.png</normaloff>:/imagens/imagens/novo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Novo</string>
+   </property>
+  </action>
+  <action name="actionAbrir">
+   <property name="icon">
+    <iconset resource="notepadRecursos.qrc">
+     <normaloff>:/imagens/imagens/abrir.png</normaloff>:/imagens/imagens/abrir.png</iconset>
+   </property>
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+  </action>
+  <action name="actionSalvar">
+   <property name="icon">
+    <iconset resource="notepadRecursos.qrc">
+     <normaloff>:/imagens/imagens/salvar.png</normaloff>:/imagens/imagens/salvar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+  </action>
+  <action name="actionSalvar_como">
+   <property name="icon">
+    <iconset resource="notepadRecursos.qrc">
+     <normaloff>:/imagens/imagens/salvar_como.png</normaloff>:/imagens/imagens/salvar_como.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salvar como</string>
+   </property>
+  </action>
+  <action name="actionCopiar">
+   <property name="icon">
+    <iconset resource="notepadRecursos.qrc">
+     <normaloff>:/imagens/imagens/copiar.png</normaloff>:/imagens/imagens/copiar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copiar</string>
+   </property>
+  </action>
+  <action name="actionCortar">
+   <property name="icon">
+    <iconset resource="notepadRecursos.qrc">
+     <normaloff>:/imagens/imagens/recortar.png</normaloff>:/imagens/imagens/recortar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cortar</string>
+   </property>
+  </action>
+  <action name="actionColar">
+   <property name="icon">
+    <iconset resource="notepadRecursos.qrc">
+     <normaloff>:/imagens/imagens/colar.png</normaloff>:/imagens/imagens/colar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Colar</string>
+   </property>
+  </action>
+  <action name="actionDesfazer">
+   <property name="icon">
+    <iconset resource="notepadRecursos.qrc">
+     <normaloff>:/imagens/imagens/desfazer.png</normaloff>:/imagens/imagens/desfazer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Desfazer</string>
+   </property>
+  </action>
+  <action name="actionRefazer">
+   <property name="icon">
+    <iconset resource="notepadRecursos.qrc">
+     <normaloff>:/imagens/imagens/refazer.png</normaloff>:/imagens/imagens/refazer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Refazer</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="notepadRecursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>
